@@ -2,7 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: "galera-arbitrator"
+  role_name: "galera_arbitrator"
   author: gaeldb
   description: Galera Arbitrator for Debian
   company: "Skalab"
