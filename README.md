@@ -22,7 +22,7 @@ None.
 
 ## Install role
 
-    ansible-galaxy install gaeldb.galera-arbitrator
+    ansible-galaxy install gaeldb.galera_arbitrator
 
 ## Example Playbook
 
