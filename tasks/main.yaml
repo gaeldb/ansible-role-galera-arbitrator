@@ -1,0 +1,21 @@
+---
+
+- name: Install Galera arbitrator
+  ansible.builtin.package:
+    name:
+      - galera-arbitrator-4
+
+- name: Configure garb service
+  ansible.builtin.template:
+    src: 'garb.service.j2'
+    dest: '{{ garb_service_file }}'
+  notify:
+    - Reload daemon
+    - Reload garb
+
+- name: Configure garb config
+  ansible.builtin.template:
+    src: 'garb.config.j2'
+    dest: '{{ garb_config_file }}'
+  notify:
+    - Reload garb

@@ -1,0 +1,2 @@
+garb_service_file: /lib/systemd/system/garb.service
+garb_config_file: /etc/galera-arbitrator/garb.config

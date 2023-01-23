@@ -1,0 +1,9 @@
+- name: Reload daemon
+  ansible.builtin.systemd:
+    daemon_reload: yes
+
+- name: Reload garb
+  ansible.builtin.systemd:
+    state: started
+    name: garb
+    enabled: yes
